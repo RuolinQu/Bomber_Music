@@ -48,10 +48,10 @@ export const HeaderLeft = styled.div`
                     content: "";
                     width: 28px;
                     height: 19px;
-                    background-image: url(${require("../../assets/img/sprite_01.png")});
+                    background-image: url(${require("@/assets/img/sprite_01.png")});
                     background-position: -190px 0;
                     top: 20px;
-                    /* right: -15px; */
+                    right: -15px; 
                 }
             }
 
