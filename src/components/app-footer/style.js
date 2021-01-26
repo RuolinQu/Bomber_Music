@@ -73,7 +73,8 @@ export const FooterRight = styled.ul`
       margin-top: 5px;
       display: block;
       width: 52px;
-      height: 10px;
+      height: 18px;
+      font-size:10px;
       background-image: url(${img1}});
       background-size: 180px 100px;
     }

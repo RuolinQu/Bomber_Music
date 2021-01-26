@@ -4,7 +4,7 @@ import BBFriend from "@/pages/friend";
 
 const routes = [
     {
-        path: "/",
+        path: "/discover",
         exact: true,
         component: BBDiscover
     },

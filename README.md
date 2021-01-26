@@ -10,4 +10,10 @@
 #### <a> can not contain height,width unless turned to block or inline-block
 
 
-#### 
+####  height: element line-height: font
+
+#### text-indent:-99999px put content out of the screen
+
+#### space: css children selector no space:qualify both 
+
+#### <hashrouter>  {<Navlink><Navlink>...{renderRoutes()}} 

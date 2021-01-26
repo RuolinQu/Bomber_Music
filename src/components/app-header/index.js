@@ -36,7 +36,7 @@ export default memo(function BBAppHeader() {
             <div className="content wrap-v1" >
 
                 <HeaderLeft>
-                    <a href="#/" className="logo sprite_01">s</a>
+                    <a href="#/" className="logo sprite_01">ssss</a>
                     <div className="select-list">
                         {
                             headerLinks.map((item, index) => {
