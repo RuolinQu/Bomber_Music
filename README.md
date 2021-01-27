@@ -12,8 +12,12 @@
 
 ####  height: element line-height: font
 
+#### relative(dad)->absolute(child)
+
 #### text-indent:-99999px put content out of the screen
 
 #### space: css children selector no space:qualify both 
 
 #### <hashrouter>  {<Navlink><Navlink>...{renderRoutes()}} 
+
+#### <Redirect to='/dir'/>
