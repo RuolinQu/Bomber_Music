@@ -22,4 +22,5 @@
 
 #### <Redirect to='/dir'/>, in renderRoute(), componet can be changed to render function:  https://cloud.tencent.com/developer/article/1677167
 
-####
+### 2
+#### Rudux:creatStore(reducer,applymiddleware) reducer: combine all reducer in reducer.js. applymiddleware:thunk
