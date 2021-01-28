@@ -20,4 +20,6 @@
 
 #### <hashrouter>  {<Navlink><Navlink>...{renderRoutes()}} 
 
-#### <Redirect to='/dir'/>
+#### <Redirect to='/dir'/>, in renderRoute(), componet can be changed to render function:  https://cloud.tencent.com/developer/article/1677167
+
+####

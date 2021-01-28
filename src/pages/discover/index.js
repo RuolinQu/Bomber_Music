@@ -7,8 +7,11 @@ import {
 } from './style';
 
 import { discoverMenu } from '@/common/local-data'
+import { renderRoutes } from 'react-router-config';
 
-export default memo(function BBDiscover() {
+export default memo(function BBDiscover(props) {
+
+    const { route } = props;
     return (
         <DiscoverWrapper>
             <div className="top">
@@ -24,6 +27,7 @@ export default memo(function BBDiscover() {
                     }
                 </TopMenu>
             </div>
+            {renderRoutes(route.routes)}
         </DiscoverWrapper>
     )
 })
