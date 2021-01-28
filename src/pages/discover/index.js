@@ -1,15 +1,25 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect } from 'react'
 import { NavLink } from "react-router-dom";
+
+
+import { discoverMenu } from '@/common/local-data'
+import { renderRoutes } from 'react-router-config';
+import request from '@/service/request';
 
 import {
     DiscoverWrapper,
     TopMenu,
 } from './style';
 
-import { discoverMenu } from '@/common/local-data'
-import { renderRoutes } from 'react-router-config';
-
 export default memo(function BBDiscover(props) {
+
+    useEffect(() => {
+        request({
+            url: '/banner'
+        }).then(res => {
+            console.log(res);
+        })
+    }, [])
 
     const { route } = props;
     return (
