@@ -24,3 +24,7 @@
 
 ### 2
 #### Rudux:creatStore(reducer,applymiddleware) reducer: combine all reducer in reducer.js. applymiddleware:thunk
+
+
+### axios
+#### put,get... are request method in axios, try catch combined asnyc await implents asnychornize request
