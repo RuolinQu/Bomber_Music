@@ -1,10 +1,10 @@
-import React, { memo, useEffect } from 'react'
+import React, { memo } from 'react'
 import { NavLink } from "react-router-dom";
 
 
 import { discoverMenu } from '@/common/local-data'
 import { renderRoutes } from 'react-router-config';
-import request from '@/service/request';
+// import request from '@/service/request';
 
 import {
     DiscoverWrapper,
@@ -13,15 +13,16 @@ import {
 
 export default memo(function BBDiscover(props) {
 
-    useEffect(() => {
-        request({
-            url: '/banner'
-        }).then(res => {
-            console.log(res);
-        })
-    }, [])
+    // useEffect(() => {
+    //     request({
+    //         url: '/banner'
+    //     }).then(res => {
+    //         // console.log(res);
+    //     })
+    // }, [])
 
     const { route } = props;
+
     return (
         <DiscoverWrapper>
             <div className="top">
