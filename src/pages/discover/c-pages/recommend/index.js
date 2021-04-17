@@ -1,5 +1,8 @@
 import React, { memo } from 'react'
 import BBTopBanner from './c-cpns/top-banner/index'
+import BBHotRecommend from './c-cpns/hot-recommend/index'
+import { RecommendLeft, RecommendRight, RecommendWrapper, Content } from './style'
+
 
 
 function BBRecommend(props) {
@@ -7,8 +10,17 @@ function BBRecommend(props) {
 
     return (
         <div>
-            <BBTopBanner />
-            <h2>Recommend</h2>
+            <RecommendWrapper>
+                <BBTopBanner />
+                <Content className='wrap-v2'>
+                    <RecommendLeft>
+                        <BBHotRecommend></BBHotRecommend>
+                    </RecommendLeft>
+                    <RecommendRight>
+
+                    </RecommendRight>
+                </Content>
+            </RecommendWrapper>
         </div>
     )
 }

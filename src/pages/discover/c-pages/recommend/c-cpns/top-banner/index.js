@@ -18,7 +18,6 @@ export default memo(function BBTopBanner() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const { topBanners } = useSelector(state => {
-
         return {
             topBanners: state.getIn(["recommend", "topBanners"])
         }
