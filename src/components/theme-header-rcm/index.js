@@ -1,12 +1,16 @@
 import React, { memo } from 'react'
+import PropTypes from 'prop-types';
+
 import { HeaderWrapper } from './style.js'
 
-export default memo(function BBThemeHeaderRCM(props) {
+
+
+const BBThemeHeaderRCM = function (props) {
 
     const { title, keywords } = props
 
     return (
-        <HeaderWrapper>
+        <HeaderWrapper className="sprite_02">
             <div className="left">
                 <h3 className="title">{title} </h3>
                 <div className="keyword">
@@ -21,7 +25,21 @@ export default memo(function BBThemeHeaderRCM(props) {
                 </div>
 
             </div>
-            <div className="right"></div>
+            <div className="right">
+                <a href='todo'>More</a>
+                <i className="icon sprite_02"></i>
+            </div>
         </HeaderWrapper>
     )
-})
+}
+
+BBThemeHeaderRCM.propTypes = {
+    title: PropTypes.string.isRequired,
+    keywords: PropTypes.array
+}
+
+BBThemeHeaderRCM.defaultProps = {
+    keywords: []
+}
+
+export default memo(BBThemeHeaderRCM);

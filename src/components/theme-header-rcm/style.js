@@ -24,7 +24,7 @@ export const HeaderWrapper = styled.div`
           margin: 0 15px;
           color: #ccc;
         }
-      }
+      }s
     }
   }
   .right {

@@ -1,6 +1,9 @@
 import React, { memo } from 'react'
 import BBTopBanner from './c-cpns/top-banner/index'
 import BBHotRecommend from './c-cpns/hot-recommend/index'
+import BBRecommendAlbum from './c-cpns/new-album/index'
+import BBRecommendRanking from './c-cpns/ranking/index'
+
 import { RecommendLeft, RecommendRight, RecommendWrapper, Content } from './style'
 
 
@@ -15,6 +18,8 @@ function BBRecommend(props) {
                 <Content className='wrap-v2'>
                     <RecommendLeft>
                         <BBHotRecommend></BBHotRecommend>
+                        <BBRecommendAlbum></BBRecommendAlbum>
+                        <BBRecommendRanking></BBRecommendRanking>
                     </RecommendLeft>
                     <RecommendRight>
 
