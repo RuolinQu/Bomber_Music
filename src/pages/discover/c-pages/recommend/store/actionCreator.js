@@ -21,10 +21,17 @@ export const getTopBannersAction = () => {
     }
 }
 
+const changeHotRecommendAction = (res) => {
+    return {
+        type: actionTypes.CHANGE_HOT_RECOMMEND,
+        hotRecommends: res.result
+    }
+}
+
 export const getHotRecommendsAction = (limit) => {
     return dispatch => {
         getHotRecommends(limit).then(value => {
-            console.log(value)
+            dispatch(changeHotRecommendAction(value))
         })
     }
 }
